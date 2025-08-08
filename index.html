@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Jahagirdar Portfolio</title>
+    <meta content="A minimalist, dark-themed portfolio website showcasing AI/ML projects, skills, and experience." name="description"/>
+    <meta content="#000000" name="theme-color"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'dark': '#0a0a0a',
+                        'darker': '#111111',
+                        'accent': '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white font-inter">
+    <div id="root">
+        <!-- Navigation -->
+        <nav class="fixed top-0 w-full bg-dark/95 backdrop-blur-sm z-50 border-b border-gray-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="text-2xl font-bold text-accent">PJ</div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#home" class="text-gray-300 hover:text-accent transition-colors">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-accent transition-colors">About</a>
+                        <a href="#skills" class="text-gray-300 hover:text-accent transition-colors">Skills</a>
+                        <a href="#projects" class="text-gray-300 hover:text-accent transition-colors">Projects</a>
+                        <a href="#contact" class="text-gray-300 hover:text-accent transition-colors">Contact</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-gray-300 hover:text-accent">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-dark">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">Pranav Jahagirdar</h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto">
+                    AI/ML Engineer specializing in deep learning, predictive modeling, and data-driven solutions.
+                </p>
+                <div class="flex flex-col items-center space-y-8">
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/pranavjah" target="_blank" class="w-12 h-12 border border-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pranav-jahagirdar-b34024255/" target="_blank" class="w-12 h-12 border border-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:j.pranav2003@gmail.com" class="w-12 h-12 border border-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                    <a href="resume.pdf" download="Pranav_Jahagirdar_Resume.pdf" class="bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors flex items-center space-x-2">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 text-sm flex flex-col items-center space-y-2">
+                    <span>Scroll Down</span>
+                    <i class="fas fa-chevron-down animate-bounce"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-dark">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">About Me</h2>
+                <div class="text-center space-y-6">
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        I'm an AI enthusiast completely fascinated by the power of turning data into intelligent, real-world action. 
+                        Since building my first simple predictive model, I've been captivated by teaching machines to learn, predict, 
+                        and solve complex problems.
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        My journey through deep learning and data analytics has been incredible. I enjoy the process of engineering 
+                        elegant solutions. For me, it's about the thrill of discovery in a sea of data and the satisfaction of 
+                        building something that is genuinely useful and impactful.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Technical Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div class="bg-darker border border-gray-800 rounded-xl p-6 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <i class="fas fa-brain text-lg text-accent"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">AI/ML</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">TensorFlow</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Scikit-Learn</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Neural Networks</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Supervised Learning</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">NLP</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">SentencePiece</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-6 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <i class="fas fa-code text-lg text-accent"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Programming</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Python</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">SQL</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">JavaScript</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">C++</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Java</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-6 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <i class="fas fa-chart-bar text-lg text-accent"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Data Science</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Pandas</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">NumPy</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Feature Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-6 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <i class="fas fa-chart-line text-lg text-accent"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Visualization</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Matplotlib</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Seaborn</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Tableau</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Power BI</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-6 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <i class="fas fa-desktop text-lg text-accent"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Web Development</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">React.js</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Node.js</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">HTML</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-6 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <i class="fas fa-database text-lg text-accent"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Database</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">PostgreSQL</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-6 hover:border-accent hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 group">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                                <i class="fas fa-wrench text-lg text-accent"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white">Tools</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Git</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Jupyter Notebooks</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Google Colab</span>
+                            <span class="bg-gray-800/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-gray-700/50 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200">Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-dark">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-darker border border-gray-800 rounded-xl p-8 hover:border-accent transition-all hover:-translate-y-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold text-white">Hybrid Machine Translation Model</h3>
+                            <i class="fas fa-bookmark text-accent text-xl"></i>
+                        </div>
+                        <div class="text-gray-500 text-sm mb-4">Jan 2023 - Mar 2023</div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Developed a deep learning-based translation model that leverages both rule-based and neural network approaches 
+                            to improve translation accuracy. Achieved 87% translation accuracy, a 12% improvement over pure neural methods.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Python</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">TensorFlow</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">SentencePiece</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Flask</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Matplotlib</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-8 hover:border-accent transition-all hover:-translate-y-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold text-white">Bitcoin Price Prediction using Machine Learning</h3>
+                            <i class="fas fa-bookmark text-accent text-xl"></i>
+                        </div>
+                        <div class="text-gray-500 text-sm mb-4">Aug 2023 - Oct 2023</div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Created an ML pipeline to predict profitable Bitcoin trading opportunities with 76% accuracy using 
+                            historical price data and market indicators.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Pandas</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">NumPy</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Matplotlib</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Seaborn</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">scikit-learn</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-8 hover:border-accent transition-all hover:-translate-y-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold text-white">IPL Score Prediction Model</h3>
+                            <i class="fas fa-bookmark text-accent text-xl"></i>
+                        </div>
+                        <div class="text-gray-500 text-sm mb-4">Nov 2023 - Dec 2023</div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Developed a regression model to predict final IPL match scores using historical match data and 
+                            player statistics.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Pandas</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">NumPy</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Keras</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">TensorFlow</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">scikit-learn</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">ipywidgets</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-darker border border-gray-800 rounded-xl p-8 hover:border-accent transition-all hover:-translate-y-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold text-white">Movie Recommendation System</h3>
+                            <i class="fas fa-bookmark text-accent text-xl"></i>
+                        </div>
+                        <div class="text-gray-500 text-sm mb-4">Feb 2023 - Mar 2023</div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Implemented content-based and collaborative filtering recommendation algorithms to suggest 
+                            personalized movie recommendations.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Pandas</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">NumPy</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Matplotlib</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">Seaborn</span>
+                            <span class="bg-dark text-accent px-3 py-1 rounded-full text-sm border border-accent">scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-dark">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Certifications & Experience</h2>
+                <div class="relative">
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-800"></div>
+                    <div class="space-y-12">
+                        <div class="flex items-start space-x-8">
+                            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+                                <i class="fas fa-briefcase text-white text-xl"></i>
+                            </div>
+                            <div class="bg-darker border border-gray-800 rounded-xl p-8 flex-1">
+                                <h3 class="text-xl font-semibold text-white mb-2">Data Science Job Simulation</h3>
+                                <div class="text-gray-500 text-sm mb-2">March 2025</div>
+                                <div class="mb-4">
+                                    <span class="bg-accent text-white px-3 py-1 rounded-full text-sm">British Airways (Forage)</span>
+                                </div>
+                                <p class="text-gray-400 leading-relaxed">
+                                    Completed a simulation on how data science is a critical component of British Airways' success, 
+                                    involving scraping and analysis of customer review data to build a predictive model on buying behaviour.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-8">
+                            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center flex-shrink-0 relative z-10">
+                                <i class="fas fa-briefcase text-white text-xl"></i>
+                            </div>
+                            <div class="bg-darker border border-gray-800 rounded-xl p-8 flex-1">
+                                <h3 class="text-xl font-semibold text-white mb-2">GenAI Job Simulation</h3>
+                                <div class="text-gray-500 text-sm mb-2">March 2025</div>
+                                <div class="mb-4">
+                                    <span class="bg-accent text-white px-3 py-1 rounded-full text-sm">BCG (Forage)</span>
+                                </div>
+                                <p class="text-gray-400 leading-relaxed">
+                                    Developed an AI-powered financial chatbot, gaining experience in Python and pandas for data manipulation. 
+                                    Integrated and interpreted complex financial data from 10-K and 10-Q reports to create a user-friendly analysis tool.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-dark">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-4 text-white">Let's Connect</h2>
+                <p class="text-xl text-gray-400 mb-12">Find me on other platforms</p>
+                <div class="flex justify-center space-x-8">
+                    <a href="https://github.com/pranavjah" target="_blank" class="w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pranav-jahagirdar-b34024255/" target="_blank" class="w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="mailto:j.pranav2003@gmail.com" class="w-16 h-16 border-2 border-gray-700 rounded-full flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent transition-all">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-darker border-t border-gray-800 py-8">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-gray-500 mb-2">&copy; 2025 Pranav Jahagirdar. All rights reserved.</p>
+                <p class="text-gray-500">Designed & Built with passion.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
